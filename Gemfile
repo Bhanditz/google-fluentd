@@ -15,6 +15,6 @@ gem 'test-kitchen',    '~> 1.2'
 gem 'kitchen-vagrant', '~> 0.14'
 
 group :test do
-  gem 'rake', '~> 10.1.0'
+  gem 'rake', '~> 12.3.3'
   gem 'serverspec', '~> 2.18.0'
 end
