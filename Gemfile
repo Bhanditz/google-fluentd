@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
 # Use Berkshelf for resolving cookbook dependencies
-gem 'berkshelf', '~> 3.0'
+gem 'berkshelf', '~> 7.0', '>= 7.0.2'
 
 # Install omnibus software
-gem 'omnibus', '5.5'
+gem 'omnibus', '7.0.12'
 gem 'omnibus-software', :github => 'opscode/omnibus-software' #, :branch => 'omnibus/3.2-stable'
 
 # Use open_uri_redirections to allow HTTPS -> HTTP redirections in omnibus
 gem 'open_uri_redirections', '0.2.1'
 
 # Use Test Kitchen with Vagrant for convering the build environment
-gem 'test-kitchen',    '~> 1.2'
-gem 'kitchen-vagrant', '~> 0.14'
+gem 'test-kitchen', '~> 2.5', '>= 2.5.2'
+gem 'kitchen-vagrant', '~> 1.5', '>= 1.5.1'
 
 group :test do
   gem 'rake', '~> 10.1.0'
